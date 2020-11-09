@@ -4,26 +4,20 @@ Challenge time: 90 minutes
 
 ## New York Taxis Data Challenge
 
-In Datalake you have 2 parquet files at challenge-data location: 1 for Yellow Taxis and 1 for Green Taxis
+Overall, the goal of this challenge is to use SQL On Demand to explore data and uses Spark Pool to prepare the dataset for a machine learning task to predict the taxi trip cost.
+
 ## Lab context
 
-Wide World Importers is designing and implementing a Proof of Concept (PoC) for a unified data analytics platform. Their soft goal is to bring siloed teams to work together on a single platform.
+The Dataset used in this challenge is based on 2 parquet files coming from azureml.opendatasets. These 2 files are stored in challenge-data container in the Data Lake
 
-In this lab, you will play the role of various persona: a data engineer, a business analyst, and a data scientist. The workspace is already set up to focus on some of the core development capabilities of Azure Synapse Analytics.
+## Exercise 1 - Explore the data lake with Azure Synapse SQL On-demand 
 
-By the end of this lab, you will have performed a non-exhaustive list of operations that combine the strength of Big Data and SQL analytics into a single platform.
+In this exercise, you will explore data using the SQL On Demand engine.
 
-## Solution architecture
+Find out:
+* The average, min and max cost of trip
+* The average, min and max cost of trip per company
 
-The diagram below provides a unified view of the exercises in the lab and their estimated times for completion.
-
-![Azure Synapse Analytics Lab Exercises](./media/exercises.png "Solution architecture")
-
-## Exercise 1 - Explore the data lake with Azure Synapse SQL On-demand and Azure Synapse Spark
-
-In this exercise, you will explore data using the engine of your choice (SQL or Spark).
-
-Understanding data through data exploration is one of the core challenges faced today by data engineers and data scientists as well. Depending on the data's underlying structure and the specific requirements of the exploration process, different data processing engines will offer varying degrees of performance, complexity, and flexibility.
 
 In Azure Synapse Analytics, you have the possibility of using either the SQL Serverless engine, the big-data Spark engine, or both.
 
