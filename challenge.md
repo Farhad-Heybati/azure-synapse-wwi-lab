@@ -20,14 +20,16 @@ Find out:
 * The average, min and max cost of the trip per company
 * Use Chart in SQL On demand to find the outliers for total_amount, trip_distance
 
-## Exercise 2 - Build Data Prepaaration
+## Exercise 2 - Build Data Preparation
 
 After exploring the data lets clean it in the Spark Pool.
 * Read the 2 CSV files
-* From lpep_pickup_datetime column create for new columns "month_num", "day_of_month","day_of_week", "hour_of_day"
+* Yellow Taxis: From lpep_pickup_datetime column create for new columns "month_num", "day_of_month","day_of_week", "hour_of_day"
+* Green Taxis: From tpep_pickup_datetime column create for new columns "month_num", "day_of_month","day_of_week", "hour_of_day"
 * Keep only the following columns:
 passenger_count,trip_distance,tip_amount,fare_amount,extra,tip_amount,tolls_amount,improvement_surcharge,total_amount,payment_type
 * Merge the 2 Dataframes
+* Remove the outliers
 
 Once data is properly understood and interpreted, moving it to the various destinations where processing steps occur is the next big task. Any modern data platform must provide a seamless experience for all the typical data wrangling actions like extractions, parsing, joining, standardizing, augmenting, cleansing, consolidating, and filtering.
 
